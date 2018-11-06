@@ -37,7 +37,7 @@ RUN useradd -U -m superset && \
         libssl-dev && \
     apt-get clean && \
     rm -r /var/lib/apt/lists/* && \
-    git clone -b https://github.com/Affirm/incubator-superset.git && \
+    git clone -b scheduled https://github.com/Affirm/incubator-superset.git && \
 #    curl https://raw.githubusercontent.com/${SUPERSET_REPO}/${SUPERSET_VERSION}/requirements.txt -o requirements.txt && \
 #    pip install --no-cache-dir -r requirements.txt && \
     pip install --no-cache-dir -r ./incubator-superset/requirements.txt && \
